@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 .resume .main .header .header-icons {
   text-align: center;
 }
-.resume .main .header .header-icons .page-subhead {
+.resume .main .header .header-icons .page-subhead { 
   margin: 1rem 15px;
   display: inline;
 }

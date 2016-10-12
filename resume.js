@@ -50,7 +50,7 @@ angular.module('Resume', ['ngMaterial'])
   return {
     restrict: 'E',
     transclude: true,
-    template: `<div ng-transclude></div>`
+    template: `<div ng-transclude style="width:700px;"></div>`
   }
 })
 
