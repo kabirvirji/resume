@@ -1,6 +1,12 @@
-h1, h2, h3, h4, h5, h6, p, a, li {
+h1, h2, h3, h4, h5, h6, p, li {
   font-family: 'Raleway', sans-serif;
 }
+
+a {
+  font-family: 'Raleway', sans-serif;
+  font-size:14px;
+  text-decoration:none;
+  }
 
 .resume {
   background-color: #1f1f1f;
@@ -58,17 +64,11 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   margin: 0.4rem 0;
 }
 .resume .main .category-row .category-title,
-.resume .main .category-row .category-subtitle {
-  display: inline;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-
+.resume .main .category-row .category-subtitle,
 .resume .main .category-row .category-date {
   display: inline;
   margin-top: 10px;
   margin-bottom: 5px;
-  margin-left: 482px;
 }
 
 

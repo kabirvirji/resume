@@ -28,11 +28,10 @@ angular.module('Resume', ['ngMaterial'])
         <h1 class="page-title page-title-last">{{lastName}}</h1>
       </div>
       <div class="header-icons">
-        <span ng-if="website" class="md-subhead page-subhead"><i class="fa fa-lg fa-code"></i>{{website}}</span>
-        <span ng-if="phone" class="md-subhead page-subhead"><i class="fa fa-lg fa-phone"></i>{{phone}}</span>
-        <span ng-if="email" class="md-subhead page-subhead"><i class="fa fa-lg fa-envelope"></i>{{email}}</span>
-        <span ng-if="github" class="md-subhead page-subhead"><i class="fa fa-lg fa-github"></i>{{github}}</span>
-        <span ng-if="linkedin" class="md-subhead page-subhead"><i class="fa fa-lg fa-linkedin-square"></i>{{linkedin}}</span>
+        <span ng-if="website" class="md-subhead page-subhead"><a target="_blank" href="http://kabirvirji.com" style="color:black;"><i class="fa fa-lg fa-code"></i>{{website}}</a></span>
+        <span ng-if="email" class="md-subhead page-subhead"><a target="_blank" href="mailto:kabirvirji@gmail.com" style="color:black;"><i class="fa fa-lg fa-envelope"></i>{{email}}</a></span>
+        <span ng-if="github" class="md-subhead page-subhead"><a target="_blank" href="http://github.com/kabirvirji" style="color:black;"><i class="fa fa-lg fa-github"></i>{{github}}</a></span>
+        <span ng-if="linkedin" class="md-subhead page-subhead"><a target="_blank" href="http://linkedin.com/in/kabirvirji" style="color:black;"><i class="fa fa-lg fa-linkedin-square"></i>{{linkedin}}</a></span>
       </div>
     </div>`
   }
@@ -94,9 +93,9 @@ angular.module('Resume', ['ngMaterial'])
     },
     transclude: true,
     template: `<div class="category">
-        <h5 class="category-title md-body-2">{{title}}</h5>&nbsp;
-        <h5 class="category-subtitle md-caption">{{subtitle}}</h5>
-        <h5 class="category-title md-body-2" style="margin-left: 482px;">{{date}}</h5>
+        <h4 class="category-title md-body-2">{{title}}</h4>&nbsp;
+        <h4 class="category-subtitle md-caption">{{subtitle}}</h4>
+        <h5 class="category-title md-body-2" style="float:right;">{{date}}</h5>
         <ul class="category-bullets" ng-transclude></ul>
     </div>`
   }
