@@ -50,7 +50,7 @@ angular.module('Resume', ['ngMaterial'])
   return {
     restrict: 'E',
     transclude: true,
-    template: `<div ng-transclude style="width:700px;"></div>`
+    template: `<div ng-transclude style="750px;"></div>`
   }
 })
 
@@ -63,7 +63,7 @@ angular.module('Resume', ['ngMaterial'])
     transclude: true,
     template: `<div flex="" class="category-row">
       <div class="category">
-        <h5 class="category-row-title">{{name}}</h5>
+        <h5 class="category-row-title">{{name}}</h5> 
         <ng-transclude></ng-transclude>
       </div>
     </div>`
@@ -78,7 +78,7 @@ angular.module('Resume', ['ngMaterial'])
     },
     transclude: true,
     template: `<div flex="" class="category-row">
-      <h4 class="category-row-title">{{name}}</h4>
+      <h3 class="category-row-title">{{name}}</h3>
       <ng-transclude></ng-transclude>
     </div>`
   }
@@ -89,12 +89,14 @@ angular.module('Resume', ['ngMaterial'])
     restrict: 'E',
     scope: {
       title: '@',
+      date: '@',
       subtitle: '@'
     },
     transclude: true,
     template: `<div class="category">
         <h5 class="category-title md-body-2">{{title}}</h5>&nbsp;
         <h5 class="category-subtitle md-caption">{{subtitle}}</h5>
+        <h5 class="category-title md-body-2" style="margin-left: 482px;">{{date}}</h5>
         <ul class="category-bullets" ng-transclude></ul>
     </div>`
   }

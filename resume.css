@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 }
 .resume .main {
   height: 100%;
-  width: 700px;
+  width: 750px;
   background-color: #fff;
   padding: 0 25px;
   margin: 0 auto;
@@ -63,6 +63,15 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   margin-top: 10px;
   margin-bottom: 5px;
 }
+
+.resume .main .category-row .category-date {
+  display: inline;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 482px;
+}
+
+
 .resume .main .category-row .category-bullets {
   margin-top: 5px;
 }
