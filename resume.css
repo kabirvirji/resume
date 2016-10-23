@@ -6,11 +6,19 @@ a {
   font-family: 'Raleway', sans-serif;
   font-size:14px;
   text-decoration:none;
-  }
+  color:black;
+
+}
+
+a:hover {
+  color: #1a8dff;
+}
 
 strong {
   color: #1a8dff;
 }
+
+
 
 
 
