@@ -24,8 +24,8 @@ angular.module('Resume', ['ngMaterial'])
     },
     template: `<div class="header">
       <div class="page-title-container">
-        <h1 class="page-title page-title-first">{{firstName}}</h1>
-        <h1 class="page-title page-title-last">{{lastName}}</h1>
+        <h2 class="page-title page-title-first">{{firstName}}</h2>
+        <h2 class="page-title page-title-last" style="color:#1a8dff;">{{lastName}}</h2>
       </div>
       <div class="header-icons">
         <span ng-if="website" class="md-subhead page-subhead"><a target="_blank" href="http://kabirvirji.com" style="color:black;"><i class="fa fa-lg fa-code"></i>{{website}}</a></span>
@@ -96,6 +96,22 @@ angular.module('Resume', ['ngMaterial'])
         <h4 class="category-title md-body-2">{{title}}</h4>&nbsp;
         <h4 class="category-subtitle md-caption">{{subtitle}}</h4>
         <h5 class="category-title md-body-2" style="float:right;">{{date}}</h5>
+        <ul class="category-bullets" ng-transclude></ul>
+    </div>`
+  }
+})
+
+.directive('skillItem', function() {
+  return {
+    restrict: 'E',
+    scope: {
+      languages: '@',
+      technologies: '@'
+    },
+    transclude: true,
+    template: `<div class="category">
+        <h2 class="category-title md-body-2"><strong>Languages: </strong>{{languages}}</h2>&nbsp;
+        <h2 class="category-title md-body-2"><strong>Technologies: </strong>{{technologies}}</h2>
         <ul class="category-bullets" ng-transclude></ul>
     </div>`
   }
